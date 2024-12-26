@@ -1,0 +1,15 @@
+{{define "title"}}Projects List{{end}}
+{{define "content"}}
+<h1>Projects</h1>
+<ul>
+    {{range .}}
+    <li>
+        <h2>{{.Project}}</h2>
+        <p><strong>Company:</strong> {{.Company}}</p>
+        <p><strong>Role:</strong> {{.Role}}</p>
+        <p><strong>Period:</strong> {{.ProjectPeriod}}</p>
+    </li>
+    {{end}}
+</ul>
+<a href="/">Back to Home</a>
+{{end}}
